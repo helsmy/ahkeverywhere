@@ -26,8 +26,6 @@ class CodeRunner
                 ObjRawSet(this, key, Value)
                 this.Start()
             }
-            Else
-                ObjRawSet(this, key, Value)
         }
         Else
             ObjRawSet(this, key, Value)
