@@ -18,14 +18,11 @@ class CodeRunner
 
     __Set(key, Value)
     {
-        if (key == "prefix")
+        if (key == "prefix" && this.isRun == True)
         {
-            if this.isRun
-            {
-                this.Stop()
-                ObjRawSet(this, key, Value)
-                this.Start()
-            }
+            this.Stop()
+            ObjRawSet(this, key, Value)
+            this.Start()
         }
         Else
             ObjRawSet(this, key, Value)
